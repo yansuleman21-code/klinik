@@ -22,7 +22,7 @@
         <div class="container">
             <nav>
                 <a href="#" class="logo">
-                    <img src="assets/img/logo.png" alt="Logo" onerror="this.style.display='none';">
+                    <img src="assets/img/logoklinik.png" alt="Logo" onerror="this.style.display='none';">
                     Klinik Pratama Adhyaksa
                 </a>
                 <div class="hamburger" id="hamburger">
@@ -42,103 +42,165 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="beranda">
-        <div class="hero-content">
-            <h1>Selamat Datang</h1>
-            <div class="hero-strip">
-                Pelayanan Kesehatan Terbaik untuk Keluarga Besar Adhyaksa dan Masyarakat.
+    <section class="hero" id="beranda"
+        style="background: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('assets/img/hero-background.jpg'); background-size: cover; background-position: center bottom; height:auto; min-height:90vh; padding-top:250px;">
+        <div class="container" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap;">
+            <div class="hero-content" style="flex:1; padding-right:20px; max-width:600px;">
+                <h1
+                    style="font-size: 2.5rem; color: var(--primary-color); line-height: 1.3; text-shadow: 2px 2px 4px rgba(255,255,255,0.8);">
+                    KLINIK PRATAMA ADHYAKSA <br>
+                    <span
+                        style="font-size: 1.8rem; color: #333; text-shadow: 1px 1px 3px rgba(255,255,255,0.8);">KEJAKSAAN
+                        NEGERI <br> KABUPATEN GORONTALO</span>
+                </h1>
+                <p style="font-size: 1.1rem; margin-top: 15px; color: #555;">
+                    "Layanan medis profesional & terpercaya untuk keluarga Anda."
+                </p>
+                <button class="cta-btn" onclick="document.getElementById('modalDaftar').style.display='block'"
+                    style="border:none; cursor:pointer; font-size:1rem; margin-top:30px;">
+                    Daftar Sekarang <i class="fas fa-arrow-right"></i>
+                </button>
             </div>
-            <br>
-            <button class="cta-btn" style="border:none; cursor:pointer; font-size:1rem; margin-top:20px;">
-                Daftar Sekarang <i class="fas fa-arrow-right"></i>
-            </button>
+            <div class="hero-image" style="flex:1; display:flex; justify-content:flex-end; align-items:flex-end;">
+                <img src="assets/img/kajari_full.jpg" alt="Kepala Kejaksaan Negeri"
+                    style="max-height:80vh; max-width:100%; object-fit:contain; filter:drop-shadow(5px 5px 15px rgba(0,0,0,0.2));">
+            </div>
         </div>
     </section>
 
-    <!-- Layanan Preview -->
+    <!-- Tentang Kami Section -->
+    <section id="profile" class="profile-section">
+        <div class="container">
+            <div class="profile-content">
+
+                <div class="profile-text">
+                    <h2>Tentang Kami</h2>
+                    <p>
+                        Klinik Pratama Adhyaksa adalah penyedia layanan kesehatan modern yang berdiri sejak tahun 2021
+                        dan
+                        telah terakreditasi "Paripurna". Kami hadir untuk memberikan pelayanan medis yang aman, cepat,
+                        dan
+                        terintegrasi dengan teknologi terkini. Dengan tim profesional dan fasilitas lengkap, kami
+                        berkomitmen menjadi mitra kesehatan terbaik Anda dan keluarga.
+                    </p>
+                    <blockquote class="quote-box">
+                        "Layanan medis profesional & terpercaya untuk keluarga Anda."
+                    </blockquote>
+                    <blockquote class="quote-box primary">
+                        "Kami melayani dengan pendekatan holistik dan dukungan teknologi modern."
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="visi-misi-grid">
+                <div class="visi-misi-card">
+                    <h3>Visi</h3>
+                    <p>Menjadi pusat layanan kesehatan pilihan utama yang mengedepankan kualitas dan kepedulian.</p>
+                </div>
+                <div class="visi-misi-card misi">
+                    <h3>Misi</h3>
+                    <ul class="misi-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Memberikan pelayanan medis berkualitas tinggi
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Mengutamakan kenyamanan dan keselamatan pasien
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Mendorong inovasi teknologi kesehatan berkelanjutan
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Layanan Unggulan -->
     <section class="services" id="layanan">
         <div class="container">
-            <h2>Layanan Kami</h2>
+            <h2>Layanan Unggulan</h2>
             <div class="service-grid">
                 <div class="service-card">
-                    <i class="fas fa-user-md service-icon"></i>
-                    <h3>Poli Umum</h3>
-                    <p>Pelayanan medis dasar dan rujukan.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-tooth service-icon"></i>
-                    <h3>Poli Gigi</h3>
-                    <p>Perawatan kesehatan gigi dan mulut.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-baby service-icon"></i>
-                    <h3>Poli KIA</h3>
-                    <p>Kesehatan Ibu dan Anak.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-flask service-icon"></i>
-                    <h3>Laboratorium</h3>
-                    <p>Fasilitas laboratorium lengkap untuk menunjang diagnosa medis.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <i class="fas fa-truck-medical service-icon"></i>
+                    <h3>UGD Rawat Jalan</h3>
 
-    <!-- Program Section -->
-    <section class="services" id="program" style="background-color: #f0f4f8;">
-        <div class="container">
-            <h2>Program Unggulan</h2>
-            <div class="service-grid">
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-microscope service-icon"></i>
+                    <h3>USG Abdomen</h3>
+
+                </div>
                 <div class="service-card">
                     <i class="fas fa-heartbeat service-icon"></i>
-                    <h3>Medical Check-up</h3>
-                    <p>Pemeriksaan kesehatan menyeluruh secara berkala.</p>
+                    <h3>Prolanis</h3>
+
                 </div>
                 <div class="service-card">
-                    <i class="fas fa-home service-icon"></i>
-                    <h3>Home Care</h3>
-                    <p>Layanan kunjungan dokter dan perawat ke rumah Anda.</p>
+                    <i class="fas fa-baby-carriage service-icon"></i>
+                    <h3>Posyandu</h3>
+
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-user-nurse service-icon"></i>
+                    <h3>Posbindu</h3>
+
                 </div>
                 <div class="service-card">
                     <i class="fas fa-syringe service-icon"></i>
-                    <h3>Vaksinasi</h3>
-                    <p>Program imunisasi lengkap untuk anak dan dewasa.</p>
+                    <h3>Pelayanan Imunisasi</h3>
+
                 </div>
                 <div class="service-card">
-                    <i class="fas fa-child service-icon"></i>
-                    <h3>Senam Hamil</h3>
-                    <p>Kelas senam khusus untuk ibu hamil yang sehat.</p>
+                    <i class="fas fa-lungs-virus service-icon"></i>
+                    <h3>Skrining HIV & TBC</h3>
+
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-female service-icon"></i>
+                    <h3>Pelayanan IVA Test</h3>
+
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Berita Section -->
-    <section class="services" id="berita">
+    <!-- Tenaga Kesehatan Section -->
+    <section class="services" id="tenaga-medis" style="background-color: #f0fdf4;">
         <div class="container">
-            <h2>Berita Terkini</h2>
+            <h2>Tenaga Kesehatan Kami</h2>
             <div class="service-grid">
-                <div class="service-card">
-                    <div
-                        style="background:#eee; height:150px; border-radius:10px; margin-bottom:15px; display:flex; align-items:center; justify-content:center;">
-                        <i class="fas fa-image fa-2x" style="color:#ccc;"></i>
+                <!-- Dokter 1 -->
+                <div class="medis-card">
+                    <div class="medis-photo">
+                        <i class="fas fa-user-md fa-3x" style="color:white;"></i>
                     </div>
-                    <h3>Penyuluhan Kesehatan Gigi</h3>
-                    <p style="font-size:0.9rem; color:#666;">12 Desember 2025</p>
-                    <p>Kegiatan penyuluhan kesehatan gigi untuk anak-anak sekolah dasar.</p>
+                    <h3>dr. Annisa S. Puspa</h3>
+                    <p style="color:#006039; font-weight:600;">Dokter Umum</p>
                 </div>
-                <div class="service-card">
-                    <div
-                        style="background:#eee; height:150px; border-radius:10px; margin-bottom:15px; display:flex; align-items:center; justify-content:center;">
-                        <i class="fas fa-image fa-2x" style="color:#ccc;"></i>
+                <!-- Dokter 2 -->
+                <div class="medis-card">
+                    <div class="medis-photo">
+                        <i class="fas fa-user-md fa-3x" style="color:white;"></i>
                     </div>
-                    <h3>Jadwal Dokter Baru</h3>
-                    <p style="font-size:0.9rem; color:#666;">10 Desember 2025</p>
-                    <p>Informasi perubahan jadwal praktik dokter klinik pratama.</p>
+                    <h3>dr. Muhamad Arief</h3>
+                    <p style="color:#006039; font-weight:600;">Dokter Umum</p>
+                </div>
+                <!-- Dokter 3 -->
+                <div class="medis-card">
+                    <div class="medis-photo">
+                        <i class="fas fa-tooth fa-3x" style="color:white;"></i>
+                    </div>
+                    <h3>drg. Devy N. Tilolango</h3>
+                    <p style="color:#006039; font-weight:600;">Dokter Gigi</p>
                 </div>
             </div>
         </div>
     </section>
+
+
 
     <!-- Footer -->
     <footer id="profil">
@@ -146,8 +208,7 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <h3>
-                        <img src="assets/img/logo.png" alt="Logo"
-                            style="height: 30px; filter: brightness(0) invert(1);">
+                        <img src="assets/img/logoklinik.png" alt="Logo" style="height: 40px; margin-right: 10px;">
                         Klinik Pratama Adhyaksa
                     </h3>
                     <p class="footer-contact">
@@ -212,6 +273,10 @@
                 <div class="form-group">
                     <label>Nama Lengkap</label>
                     <input type="text" name="nama" required placeholder="Nama Sesuai KTP">
+                </div>
+                <div class="form-group">
+                    <label>Nomor HP / WhatsApp</label>
+                    <input type="number" name="no_hp" required placeholder="Contoh: 0812..." autocomplete="off">
                 </div>
                 <div class="form-group">
                     <label>Poli Tujuan</label>

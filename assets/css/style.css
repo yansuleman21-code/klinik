@@ -1,7 +1,9 @@
 :root {
-    --primary-color: #0056b3;
-    --secondary-color: #004494;
-    --accent-color: #ffc107;
+    --primary-color: #006039;
+    /* Adhyaksa Green */
+    --secondary-color: #FFD700;
+    /* Gold */
+    --accent-color: #DAA520;
     --text-color: #333;
     --light-bg: #f8f9fa;
     --white: #ffffff;
@@ -123,7 +125,7 @@ nav {
     position: relative;
     height: 80vh;
     min-height: 500px;
-    background: url('../img/hero-bg.png') no-repeat center center/cover;
+    /* background: url('../img/hero-bg.png') no-repeat center center/cover; */
     display: flex;
     align-items: center;
 }
@@ -429,4 +431,38 @@ footer {
 
 .btn-submit:hover {
     background-color: var(--secondary-color);
+}
+/* Medical Team Cards */
+.medis-card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+    text-align: center;
+    border-top: 5px solid var(--primary-color);
+}
+
+.medis-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.medis-photo {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--white);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.medis-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+    color: var(--text-color);
 }
